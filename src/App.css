@@ -52,6 +52,15 @@
   background-color: lightblue;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
 }
+input, textarea{
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+input:focus, textarea:focus{
+  outline-width: 0;
+  border: 1px solid grey;
+}
 
 /* Preview */
 .preview-container{

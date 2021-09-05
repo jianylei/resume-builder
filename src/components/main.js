@@ -1,3 +1,5 @@
+import { useState } from "react";
+import uniqid from "uniqid"
 import Form from "./form/form"
 import Preview from "./preview/preview"
 
@@ -11,7 +13,7 @@ function Main() {
           email: "",
           summary: "",
           link:[{
-            title: "",
+            title: "gfd",
             url: ""
           }]
         },
@@ -35,8 +37,8 @@ function Main() {
       })
     return (
         <div className="main-container">
-            <Form />
-            <Preview />
+            <Form resume={resume} />
+            <Preview resume={resume} />
         </div>
     );
 }
