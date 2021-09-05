@@ -1,12 +1,34 @@
+import uniqid from "uniqid";
 import LinkItem from "./linkItems";
 
-function Link({resume}) {
+function Link({ resume, setResume }) {
+    function addLinkHandler() {
+        setResume(prevState => ({
+            ...prevState,
+            personalInfo: {
+                ...prevState.personalInfo,
+                link: [...prevState.personalInfo.link, {
+                    id: uniqid(),
+                    title: "",
+                    url: ""
+                }]
+            }
+        }))
+    }
+
+    const linkItems = resume.personalInfo.link.map((links) => {
+        return (
+            <LinkItem key={links.id} id={links.id} link={links} resume={resume} setResume={setResume} />
+        )
+    })
+
     return (
-        <div className="link-container">
-            <input type="text" name="linkTitle" placeholder="Title"></input>
-            <input type="text" name="linkInput" placeholder="Url"></input>
-            
-        </div>
+        <>
+            <div className="link-container">
+                {linkItems}
+            </div>
+            <button onClick={addLinkHandler}>Add</button>
+        </>
     );
 }
 

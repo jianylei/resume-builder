@@ -13,8 +13,9 @@ function Main() {
           email: "",
           summary: "",
           link:[{
+            id: uniqid(),
             title: "gfd",
-            url: ""
+            url: "hfghfg"
           }]
         },
         experience:[{
