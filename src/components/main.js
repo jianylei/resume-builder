@@ -6,7 +6,7 @@ import Preview from "./preview/preview"
 function Main() {
     const[resume, setResume] = useState({
         personalInfo:{
-          firstName: "",
+          firstName: "John",
           lastName: "",
           title: "",
           phone: "",
@@ -35,9 +35,10 @@ function Main() {
           end: ""
         }]
       })
+
     return (
         <div className="main-container">
-            <Form resume={resume} />
+            <Form resume={resume} setResume={setResume} />
             <Preview resume={resume} />
         </div>
     );
