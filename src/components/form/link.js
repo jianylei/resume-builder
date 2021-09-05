@@ -18,7 +18,7 @@ function Link({ resume, setResume }) {
 
     const linkItems = resume.personalInfo.link.map((links) => {
         return (
-            <LinkItem key={links.id} id={links.id} link={links} resume={resume} setResume={setResume} />
+            <LinkItem key={links.id} id={links.id} resume={resume} setResume={setResume} />
         )
     })
 

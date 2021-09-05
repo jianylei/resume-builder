@@ -19,7 +19,7 @@ function Experience({ resume, setResume }) {
 
     const experienceItems = resume.experience.map((experience) => {
         return (
-            <ExperienceItems key={experience.id} id={experience.id} experience={experience} resume={resume} setResume={setResume} />
+            <ExperienceItems key={experience.id} id={experience.id} resume={resume} setResume={setResume} />
         )
     })
 

@@ -1,4 +1,18 @@
-function LinkItems({link, id, resume, setResume}) {
+function LinkItems({ id, resume, setResume, changeHandler }) {
+    function changeHandler(e){
+        const { name, value} = e.target;
+        setResume(prevState => {
+            const newList = resume.personalInfo.link.map((link)=>{
+                if(link.id === id){
+                    return { ...link, [name]: value }
+                }
+                return link
+            })
+            return {...prevState, personalInfo: {...resume.personalInfo, link: [...newList]}};
+        })
+        console.log(resume);
+    }
+
     function removeLinkHandler(e){
         setResume((prevState) => {
             const newList = resume.personalInfo.link.filter(link => {
@@ -9,8 +23,8 @@ function LinkItems({link, id, resume, setResume}) {
     }
     return (
         <div className="link-item-container">
-            <input type="text" name="linkTitle" placeholder="Title"></input>
-            <input type="text" name="linkInput" placeholder="Url"></input>
+            <input onChange={changeHandler} type="text" name="title" placeholder="Title"></input>
+            <input onChange={changeHandler} type="text" name="url" placeholder="Url"></input>
             <button onClick={removeLinkHandler}>Delete</button>
         </div>
     );

@@ -12,7 +12,7 @@ function Form({resume, setResume}) {
                 [name]: value
             }
         }))
-        console.log(resume.personalInfo.firstName);
+        console.log(resume);
     }
 
     return (
@@ -26,7 +26,7 @@ function Form({resume, setResume}) {
             <textarea onChange={changeInfoHandler} name="summary" placeholder="Summary"></textarea>
 
             <legend>Links</legend>
-            <Link  resume={resume}  setResume={setResume} />
+            <Link  resume={resume}  setResume={setResume}/>
 
             <legend>Experience</legend>
             <Experience resume={resume}  setResume={setResume} />

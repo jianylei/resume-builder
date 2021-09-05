@@ -1,4 +1,4 @@
-function EducationItems({ experience, id, resume, setResume }) {
+function EducationItems({ id, resume, setResume, changeHandler }) {
     function removeEducationHandler(e) {
         setResume((prevState) => {
             const newList = resume.education.filter(education => {

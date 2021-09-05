@@ -1,4 +1,4 @@
-function ExperienceItems({ experience, id, resume, setResume }) {
+function ExperienceItems({ id, resume, setResume }) {
     function removeExperienceHandler(e) {
         setResume((prevState) => {
             const newList = resume.experience.filter(experience => {
