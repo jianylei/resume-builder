@@ -17,7 +17,7 @@ function Experience({ resume, setResume }) {
         }))
     }
 
-    const linkItems = resume.experience.map((experience) => {
+    const experienceItems = resume.experience.map((experience) => {
         return (
             <ExperienceItems key={experience.id} id={experience.id} experience={experience} resume={resume} setResume={setResume} />
         )
@@ -25,7 +25,7 @@ function Experience({ resume, setResume }) {
 
     return (
         <>
-            {linkItems}
+            {experienceItems}
             <button onClick={addExperienceHandler}>Add</button>
         </ >
     )
