@@ -81,6 +81,7 @@ input:focus, textarea:focus{
   padding: 4rem;
 }
 .side-container{
+  font-size: 14px;
   padding: 4rem 4rem 4rem 0;
 }
 .preview-header-container{
@@ -115,6 +116,13 @@ li{
 .side-container{
   display: flex;
   flex-direction: column;
+}
+.personal-info{
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.preview-link-container,.preview-skills-container{
+  margin-bottom: 10px;
 }
 
 /* Footer */

@@ -14,7 +14,6 @@ class Preview extends Component{
 
                     <div className="summary">{resume.personalInfo.summary}</div>
 
-                    
                     <PreviewMain resume={resume}/>
                 </div>
                 <SideBar resume={resume}/>

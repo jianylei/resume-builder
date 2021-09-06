@@ -1,31 +1,40 @@
+import EducationItem from "./educationItems";
+
 function SideBar({resume}){
     const linkItems = resume.personalInfo.link.map((link)=>{
         return(
-            <div className="preview-link-contaienr">
+            <div className="preview-link-container">
                 <div>{link.title}</div>
-                <div>{link.url}</div>
+                <div style={{color:"rgb(83, 83, 83)"}}>{link.url}</div>
             </div>
         )
     });
     const skillItems = resume.skills.map((skill)=>{
         return(
-            <div className="preview-link-contaienr">
+            <div className="preview-skills-container">
                 <div>{skill.skill}</div>
             </div>
         )
     });
+    const educationItems = resume.education.map((education) => (
+        <EducationItem key={education.id} education={education} />
+    ));
 
     return(
         <div className="side-container">
-            <div className="personal-info">
+            <div className="personal-info"><b>
                 <div>{resume.personalInfo.phone}</div>
                 <div>{resume.personalInfo.email}</div>
-            </div>
-            
+            </b></div>
+
+            <legend>Socials</legend>
             {linkItems}
 
-            <legend>Skill</legend>
+            <legend style={{marginTop:"40px"}}>Skills</legend>
             {skillItems}
+
+            <legend style={{marginTop:"40px"}}>Education</legend>
+            {educationItems}
         </div>
     )
 }

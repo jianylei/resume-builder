@@ -1,12 +1,12 @@
 import ExperienceItem from "./experienceItems";
-import EducationItem from "./educationItems";
+import ProjectItem from "./projectItems";
 
 function PreviewMain({resume}){
     const experienceItems = resume.experience.map((experience) => (
         <ExperienceItem key={experience.id} experience={experience} />
     ));
-    const educationItems = resume.education.map((education) => (
-        <EducationItem key={education.id} education={education} />
+    const projectItems = resume.projects.map((project) => (
+        <ProjectItem key={project.id} project={project} />
     ));
 
     return(
@@ -16,8 +16,8 @@ function PreviewMain({resume}){
                 {experienceItems}
             </div>
 
-            <legend>Education</legend>
-                {educationItems}
+            <legend>Projects</legend>
+                {projectItems}
         </div>
     )
 }

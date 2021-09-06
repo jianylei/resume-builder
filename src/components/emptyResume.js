@@ -29,6 +29,14 @@ const emptyResume = {
         text: ""
       }]
     }],
+    projects:[{
+      id: uniqid(),
+      name: "",
+      description:[{
+        id: uniqid(),
+        text: ""
+      }]
+    }],
     education:[{
       id: uniqid(),
       instituteName: "",
