@@ -1,5 +1,5 @@
-function LinkItems({ id, resume, setResume, changeHandler }) {
-    function changeHandler(e){
+function LinkItems({ id, resume, setResume}) {
+    function changeLinkHandler(e){
         const { name, value} = e.target;
         setResume(prevState => {
             const newList = resume.personalInfo.link.map((link)=>{
@@ -22,8 +22,8 @@ function LinkItems({ id, resume, setResume, changeHandler }) {
     }
     return (
         <div className="link-item-container">
-            <input onChange={changeHandler} type="text" name="title" placeholder="Title"></input>
-            <input onChange={changeHandler} type="text" name="url" placeholder="Url"></input>
+            <input onChange={changeLinkHandler} type="text" name="title" placeholder="Title"></input>
+            <input onChange={changeLinkHandler} type="text" name="url" placeholder="Url"></input>
             <button onClick={removeLinkHandler}>Delete</button>
         </div>
     );

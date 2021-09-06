@@ -1,6 +1,7 @@
 import Link from "./link"
 import Experience from "./experience";
 import Education from "./education"
+import Skills from "./skills"
 
 function Form({resume, setResume}) {
     function changeInfoHandler(e){
@@ -27,6 +28,9 @@ function Form({resume, setResume}) {
 
             <legend>Links</legend>
             <Link  resume={resume}  setResume={setResume}/>
+
+            <legend>Skills</legend>
+            <Skills  resume={resume}  setResume={setResume}/>
 
             <legend>Experience</legend>
             <Experience resume={resume}  setResume={setResume} />

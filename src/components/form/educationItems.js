@@ -1,5 +1,5 @@
-function EducationItems({ id, resume, setResume, changeHandler }) {
-    function changeHandler(e){
+function EducationItems({ id, resume, setResume }) {
+    function changeEducationHandler(e){
         const { name, value} = e.target;
         setResume(prevState => {
             const newList = resume.education.map((education)=>{
@@ -22,12 +22,12 @@ function EducationItems({ id, resume, setResume, changeHandler }) {
     }
     return (
         <>
-            <input onChange={changeHandler} type="text" name="instituteName" placeholder="Institution Name"></input>
-            <input onChange={changeHandler} type="text" name="city" placeholder="City"></input>
-            <input onChange={changeHandler} type="text" name="degree" placeholder="Degree"></input>
-            <input onChange={changeHandler} type="text" name="subject" placeholder="Subject"></input>
-            <input onChange={changeHandler} type="text" name="start" placeholder="Start Date"></input>
-            <input onChange={changeHandler} type="text" name="end" placeholder="End Date"></input>
+            <input onChange={changeEducationHandler} type="text" name="instituteName" placeholder="Institution Name"></input>
+            <input onChange={changeEducationHandler} type="text" name="city" placeholder="City"></input>
+            <input onChange={changeEducationHandler} type="text" name="degree" placeholder="Degree"></input>
+            <input onChange={changeEducationHandler} type="text" name="subject" placeholder="Subject"></input>
+            <input onChange={changeEducationHandler} type="text" name="start" placeholder="Start Date"></input>
+            <input onChange={changeEducationHandler} type="text" name="end" placeholder="End Date"></input>
             <button onClick={removeEducationHandler}>Delete</button>
         </>
     );

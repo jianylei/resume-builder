@@ -1,5 +1,5 @@
 function ExperienceItems({ id, resume, setResume }) {
-    function changeHandler(e){
+    function changeExperienceHandler(e){
         const { name, value} = e.target;
         setResume(prevState => {
             const newList = resume.experience.map((experience)=>{
@@ -21,11 +21,11 @@ function ExperienceItems({ id, resume, setResume }) {
     }
     return (
         <>
-            <input onChange={changeHandler} type="text" name="company" placeholder="Company"></input>
-            <input onChange={changeHandler} type="text" name="position" placeholder="Position"></input>
-            <input onChange={changeHandler} type="text" name="city" placeholder="City"></input>
-            <input onChange={changeHandler} type="text" name="start" placeholder="Start Date"></input>
-            <input onChange={changeHandler} type="text" name="end" placeholder="End Date"></input>
+            <input onChange={changeExperienceHandler} type="text" name="company" placeholder="Company"></input>
+            <input onChange={changeExperienceHandler} type="text" name="position" placeholder="Position"></input>
+            <input onChange={changeExperienceHandler} type="text" name="city" placeholder="City"></input>
+            <input onChange={changeExperienceHandler} type="text" name="start" placeholder="Start Date"></input>
+            <input onChange={changeExperienceHandler} type="text" name="end" placeholder="End Date"></input>
             <button onClick={removeExperienceHandler}>Delete</button>
         </>
     );
