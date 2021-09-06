@@ -119,8 +119,11 @@ input:focus, textarea:focus{
 }
 .link-item-container{
   display: grid;
-  gap: 10px;
-  margin-bottom: 10px;
+  gap: 1rem;
+}
+.link-container{
+  display: grid;
+  row-gap: 1rem;
 }
 
 /* Preview */
