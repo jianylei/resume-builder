@@ -22,7 +22,6 @@ function ExperienceItems({ id, experience, resume, setResume }) {
             return { ...prevState, experience: [...newList] };
         });
     }
-
     function addDescriptionHandler() {
         setResume((prevState) => {
             const newList = resume.experience.map((experience) => {

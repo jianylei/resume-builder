@@ -6,7 +6,7 @@ const exampleResume = {
         title: "Web Developer",
         phone: "(123) 456-7890",
         email: "johndoe@mail.com",
-        summary: "Dedicated web developer with five years of experience in database administration and website design. Strong creative and analytical skills. Team player with an eye for detail. MySQL, Python and Ruby on Rails.",
+        summary: "Dedicated web developer with five fake years of experience in database administration and website design. Strong creative and analytical skills. Team player with an eye for detail. MySQL, Python and Ruby on Rails.",
         link: [{
             id: uniqid(),
             title: "Github",
@@ -15,6 +15,10 @@ const exampleResume = {
             id: uniqid(),
             title: "Portfolio",
             url: "johndoe.johndoe"
+        }, {
+            id: uniqid(),
+            title: "LinkedIn",
+            url: "@Johndoe"
         }]
     },
     skills: [{
@@ -102,7 +106,7 @@ const exampleResume = {
     education: [{
         id: uniqid(),
         instituteName: "Fake Harvard",
-        city: "Cambridge",
+        city: "Cambridge, MA",
         degree: "B.S.",
         subject: "Computer Science",
         start: "Sep 2014",

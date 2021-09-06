@@ -1,12 +1,12 @@
-function ProjectItem({project}){
-    const newList = project.description.map((description)=>{
-        return(
+function ProjectItem({ project }) {
+    const newList = project.description.map((description) => {
+        return (
             <li key={description.id}>{description.text}</li>
         )
     })
-    return(
+    return (
         <div>
-                <div style={{fontWeight: "bold"}}>{project.name}</div>
+            <div style={{ fontWeight: "bold" }}>{project.name}</div>
             <ul className="preview-experience-text">{newList}</ul>
         </div>
     )

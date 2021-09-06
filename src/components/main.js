@@ -8,27 +8,27 @@ import emptyResume from "./emptyResume"
 import exampleResume from "./exampleResume";
 
 function Main() {
-    const[resume, setResume] = useState(emptyResume)
+    const [resume, setResume] = useState(emptyResume)
 
     const componentRef = useRef()
-    const handlePrint = useReactToPrint({ 
-          content: () => componentRef.current 
+    const handlePrint = useReactToPrint({
+        content: () => componentRef.current
     })
 
-    function clear(){
+    function clear() {
         setResume(emptyResume);
     }
-    function setExample(){
+    function setExample() {
         setResume(exampleResume);
     }
 
     return (
         <>
-        <ButtonBar onPrint={handlePrint} onClear={clear} onExample={setExample} setResume={setResume}/>
-        <div className="main-container">
-            <Form resume={resume} setResume={setResume} />
-            <Preview resume={resume} ref={componentRef}/>
-        </div>
+            <ButtonBar onPrint={handlePrint} onClear={clear} onExample={setExample} setResume={setResume} />
+            <div className="main-container">
+                <Form resume={resume} setResume={setResume} />
+                <Preview resume={resume} ref={componentRef} />
+            </div>
         </>
     );
 }

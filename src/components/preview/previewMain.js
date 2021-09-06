@@ -1,7 +1,7 @@
 import ExperienceItem from "./experienceItems";
 import ProjectItem from "./projectItems";
 
-function PreviewMain({resume}){
+function PreviewMain({ resume }) {
     const experienceItems = resume.experience.map((experience) => (
         <ExperienceItem key={experience.id} experience={experience} />
     ));
@@ -9,7 +9,7 @@ function PreviewMain({resume}){
         <ProjectItem key={project.id} project={project} />
     ));
 
-    return(
+    return (
         <div className="preview-content">
             <div>
                 <legend>Experience</legend>
@@ -17,7 +17,7 @@ function PreviewMain({resume}){
             </div>
 
             <legend>Projects</legend>
-                {projectItems}
+            {projectItems}
         </div>
     )
 }

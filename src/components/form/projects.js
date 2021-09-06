@@ -7,7 +7,7 @@ function Project({ resume, setResume }) {
             ...prevState,
             projects: [...prevState.projects, {
                 id: uniqid(),
-                description:[{
+                description: [{
                     id: uniqid(),
                     text: ""
                 }]

@@ -1,23 +1,23 @@
 function EducationItems({ id, education, resume, setResume }) {
-    function changeEducationHandler(e){
-        const { name, value} = e.target;
+    function changeEducationHandler(e) {
+        const { name, value } = e.target;
         setResume(prevState => {
-            const newList = resume.education.map((education)=>{
-                if(education.id === id){
+            const newList = resume.education.map((education) => {
+                if (education.id === id) {
                     return { ...education, [name]: value }
                 }
                 return education
             })
-            return {...prevState, education:[...newList]};
+            return { ...prevState, education: [...newList] };
         })
     }
-    
+
     function removeEducationHandler(e) {
         setResume((prevState) => {
             const newList = resume.education.filter(education => {
                 return (education.id !== id);
             })
-            return { ...prevState, education:[...newList]};
+            return { ...prevState, education: [...newList] };
         });
     }
     return (

@@ -4,9 +4,9 @@ import Education from "./education"
 import Skills from "./skills"
 import Project from "./projects";
 
-function Form({resume, setResume}) {
-    function changeInfoHandler(e){
-        const { name, value} = e.target;
+function Form({ resume, setResume }) {
+    function changeInfoHandler(e) {
+        const { name, value } = e.target;
         setResume(prevState => ({
             ...prevState,
             personalInfo: {
@@ -28,19 +28,19 @@ function Form({resume, setResume}) {
             <textarea onChange={changeInfoHandler} value={resume.personalInfo.summary} name="summary" placeholder="Summary"></textarea>
 
             <legend>Links</legend>
-            <Link  resume={resume}  setResume={setResume}/>
+            <Link resume={resume} setResume={setResume} />
 
             <legend>Experience</legend>
-            <Experience resume={resume}  setResume={setResume} />
+            <Experience resume={resume} setResume={setResume} />
 
             <legend>Projects</legend>
-            <Project resume={resume}  setResume={setResume} />
+            <Project resume={resume} setResume={setResume} />
 
             <legend>Education</legend>
-            <Education resume={resume}  setResume={setResume} />
+            <Education resume={resume} setResume={setResume} />
 
             <legend>Skills</legend>
-            <Skills  resume={resume}  setResume={setResume}/>
+            <Skills resume={resume} setResume={setResume} />
         </div>
     );
 }

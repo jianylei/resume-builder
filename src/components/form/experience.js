@@ -1,7 +1,6 @@
 import uniqid from "uniqid";
 import ExperienceItems from "./experienceItems";
 
-
 function Experience({ resume, setResume }) {
     function addExperienceHandler() {
         setResume(prevState => ({
@@ -13,7 +12,7 @@ function Experience({ resume, setResume }) {
                 city: "",
                 start: "",
                 end: "",
-                description:[{
+                description: [{
                     id: uniqid(),
                     text: ""
                 }]

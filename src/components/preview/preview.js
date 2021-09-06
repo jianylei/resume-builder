@@ -3,21 +3,21 @@ import PreviewHeader from "./header";
 import PreviewMain from "./previewMain";
 import SideBar from "./sidebar";
 
-class Preview extends Component{
-    render(){
-        const {resume} = this.props;
+class Preview extends Component {
+    render() {
+        const { resume } = this.props;
 
-        return(
+        return (
             <div className="preview-container">
                 <div className="content-container">
-                    <PreviewHeader resume={resume}/>
+                    <PreviewHeader resume={resume} />
 
                     <div className="summary">{resume.personalInfo.summary}</div>
 
-                    <PreviewMain resume={resume}/>
+                    <PreviewMain resume={resume} />
                 </div>
-                <SideBar resume={resume}/>
-        </div>
+                <SideBar resume={resume} />
+            </div>
         )
     }
 }
