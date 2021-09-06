@@ -5,6 +5,10 @@
     margin: 0;
     word-wrap: break-word;
 }
+/* Safari margin fix */
+_::-webkit-full-page-media, _:future, input, textarea, button{
+  margin-bottom: 10px;
+}
 legend{
   color: #3184cc;
   font-weight: bold;
@@ -106,7 +110,7 @@ input:focus, textarea:focus{
   width: 100%;
 }
 .add-btn, .description-delete-btn{  
-  width: 74px;
+  width: 75px;
   height: 50px;
 }
 .add-btn{
@@ -116,7 +120,6 @@ input:focus, textarea:focus{
 .link-item-container{
   display: grid;
   gap: 10px;
-  padding-bottom: 15px;
 }
 
 /* Preview */
