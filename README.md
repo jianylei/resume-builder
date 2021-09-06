@@ -1,5 +1,7 @@
 # Resume Builder
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+
+<a href="https://jianylei.github.io/resume-builder/">Live App</a>
 ## Table of Contents
 - [Introduction](#introduction)
 - [Tech](#tech)
