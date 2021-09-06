@@ -10,7 +10,6 @@ function LinkItems({ id, resume, setResume, changeHandler }) {
             })
             return {...prevState, personalInfo: {...resume.personalInfo, link: [...newList]}};
         })
-        console.log(resume);
     }
 
     function removeLinkHandler(e){

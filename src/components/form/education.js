@@ -1,7 +1,6 @@
 import uniqid from "uniqid";
 import EducationItems from "./educationItems";
 
-
 function Education({ resume, setResume }) {
     function addEducationHandler() {
         setResume(prevState => ({
