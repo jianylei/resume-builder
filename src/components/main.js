@@ -1,7 +1,9 @@
-import { useState } from "react";
-import uniqid from "uniqid"
-import Form from "./form/form"
-import Preview from "./preview/preview"
+import { useState, useRef } from "react";
+import { useReactToPrint } from 'react-to-print';
+import uniqid from "uniqid";
+import Form from "./form/form";
+import Preview from "./preview/preview";
+import ButtonBar from "./buttonBar";
 
 function Main() {
     const[resume, setResume] = useState({
@@ -37,11 +39,19 @@ function Main() {
         }]
       })
 
+    const componentRef = useRef()
+    const handlePrint = useReactToPrint({ 
+          content: () => componentRef.current 
+    })
+
     return (
+        <>
         <div className="main-container">
             <Form resume={resume} setResume={setResume} />
-            <Preview resume={resume} />
+            <Preview resume={resume} ref={componentRef}/>
         </div>
+        <ButtonBar onClick={handlePrint} />
+        </>
     );
 }
 
