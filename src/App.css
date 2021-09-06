@@ -128,19 +128,19 @@ input:focus, textarea:focus{
 
 /* Preview */
 .preview-container{
-  width: 795px;
-  height: 1120px;
+  width: 220mm;
+  height: 285mm;
   position: sticky;
   top: 10px;
   display: grid;
-  grid-template-columns: 555px 235px;
+  grid-template-columns: 160mm 50mm;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
 }
 .content-container{
-  padding: 4rem 3rem 4rem 4rem;
+  padding: 3rem 3rem 4rem 4rem;
 }
 .side-container{
-  padding: 4rem 4rem 4rem 0;
+  padding: 4rem 3rem 4rem 0;
 }
 .preview-header-container >h1{
   font-size: 45px;
