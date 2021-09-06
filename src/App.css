@@ -81,7 +81,6 @@ input:focus, textarea:focus{
   padding: 4rem;
 }
 .side-container{
-  font-size: 14px;
   padding: 4rem 4rem 4rem 0;
 }
 .preview-header-container{
@@ -92,13 +91,13 @@ input:focus, textarea:focus{
 }
 .summary{
   margin-top: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 /* experience */
 .experience, .education{
   margin-bottom: 5px;
 }
-.experience-flex, .education-flex{
+.experience-flex{
   display: flex;
   justify-content: space-between;
   margin-bottom: 3px;
@@ -110,20 +109,26 @@ input:focus, textarea:focus{
 }
 li{
   margin-bottom: 5px;
+  font-size: 15px;
 }
 /* side */
 
 .side-container{
   display: flex;
   flex-direction: column;
+  font-size: 15px;
 }
 .personal-info{
   margin-top: 30px;
   margin-bottom: 50px;
 }
-.preview-link-container,.preview-skills-container{
+.preview-link-container{
   margin-bottom: 10px;
 }
+.preview-skills-container,.preview-education-wrapper{
+  margin-bottom: 5px;
+}
+
 
 /* Footer */
 .footer-container{
