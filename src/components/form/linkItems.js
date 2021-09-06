@@ -1,4 +1,4 @@
-function LinkItems({ id, resume, setResume}) {
+function LinkItem({ id, link, resume, setResume}) {
     function changeLinkHandler(e){
         const { name, value} = e.target;
         setResume(prevState => {
@@ -22,11 +22,11 @@ function LinkItems({ id, resume, setResume}) {
     }
     return (
         <div className="link-item-container">
-            <input onChange={changeLinkHandler} type="text" name="title" placeholder="Title"></input>
-            <input onChange={changeLinkHandler} type="text" name="url" placeholder="Url"></input>
+            <input onChange={changeLinkHandler} value={link.title} type="text" name="title" placeholder="Title"></input>
+            <input onChange={changeLinkHandler} value={link.url} type="text" name="url" placeholder="Url"></input>
             <button onClick={removeLinkHandler}>Delete</button>
         </div>
     );
 }
 
-export default LinkItems;
+export default LinkItem;

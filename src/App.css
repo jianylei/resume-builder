@@ -10,31 +10,45 @@ legend{
   font-weight: bold;
   margin-bottom: 10px;
 }
+button{
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  font-weight: bold;
+  background-color: rgb(49, 49, 49);
+  color: white;
+  cursor: pointer;
+}
+button:hover{
+  background-color: rgb(31, 30, 30);
+}
 
-  /* Header */
+/* Header */
 .head-wrap{
     display: flex;
     align-items: center;
     max-width: 1800px;
     padding: 3rem 8rem;
-    color: grey;
+    color: white;
     font-size: 24px;
     height: 120px;
+    width: 100%;
 }
 .head-container{
-  background-color: black;
+  background-color: rgb(49, 49, 49);;
+  width: 100%;
 }
 
-   /* Main */
+/* Main */
 .main-container{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     gap: 4rem;
     max-width: 1800px;
-    padding: 4rem 8rem;
+    padding: 4rem 8rem 0;
     margin: 0 auto;
-    margin-bottom: 4rem;
+    margin-bottom: 30px;
 }
 @media (max-width: 1600px) {
   .main-container{
@@ -54,8 +68,11 @@ legend{
   width: 795px;
   padding: 2rem;
   border-radius: 5px;
-  background-color: lightblue;
+  background-color: rgba(0, 0, 0, 0.1);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+}
+.form-container > legend{
+  color: black;
 }
 input, textarea{
   padding: 0.5rem;
@@ -66,6 +83,29 @@ input:focus, textarea:focus{
   outline-width: 0;
   border: 1px solid grey;
 }
+.experience-text{
+  display: flex;
+  gap: 15px;
+  padding: 0 20px 15px;
+  margin-left: auto;
+  color: rgb(83, 83, 83);
+}
+.experience-textarea{
+  width: 100%;
+}
+.add-btn, .description-delete-btn{  
+  width: 74px;
+  height: 50px;
+}
+.add-btn{
+  float: right;
+  margin-right: 20px;
+}
+.link-item-container{
+  display: grid;
+  gap: 10px;
+  padding-bottom: 15px;
+}
 
 /* Preview */
 .preview-container{
@@ -74,16 +114,14 @@ input:focus, textarea:focus{
   position: sticky;
   top: 10px;
   display: grid;
-  grid-template-columns: 150mm 60mm;
+  grid-template-columns: 555px 235px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
 }
 .content-container{
-  padding: 4rem;
+  padding: 4rem 3rem 4rem 4rem;
 }
 .side-container{
   padding: 4rem 4rem 4rem 0;
-}
-.preview-header-container{
 }
 .preview-header-container >h1{
   font-size: 45px;
@@ -102,7 +140,7 @@ input:focus, textarea:focus{
   justify-content: space-between;
   margin-bottom: 3px;
 }
-.experience-text{
+.preview-experience-text{
   padding: 10px;
   margin-left: 20px;
   color: rgb(83, 83, 83);
@@ -112,7 +150,6 @@ li{
   font-size: 15px;
 }
 /* side */
-
 .side-container{
   display: flex;
   flex-direction: column;
@@ -129,6 +166,18 @@ li{
   margin-bottom: 5px;
 }
 
+/* Button bar */
+.bar-container{
+  display: flex;
+  justify-content: space-evenly;
+  width: 500px;
+  margin: 50px auto 70px;
+}
+.bar-container > button{
+  width: 100px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+}
+
 
 /* Footer */
 .footer-container{
@@ -138,10 +187,9 @@ li{
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 0.5rem;
-  background-color: black;
+  padding: 1rem;
+  background-color: rgb(49, 49, 49);;
   color: grey;
-  border: 2px solid purple;
 }
 
 /* "built by..." */

@@ -17,7 +17,7 @@ function Project({ resume, setResume }) {
 
     const projectItems = resume.projects.map((project) => {
         return (
-            <ProjectItems key={project.id} id={project.id} resume={resume} setResume={setResume} />
+            <ProjectItems key={project.id} id={project.id} project={project} resume={resume} setResume={setResume} />
         )
     })
 

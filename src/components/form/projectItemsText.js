@@ -1,4 +1,4 @@
-function ProjectText({id, parentId, resume, setResume}){
+function ProjectText({id, parentId, description, resume, setResume}){
     function changeProjectTextHandler(e) {
         const { name, value } = e.target;
         setResume((prevState) => {
@@ -35,7 +35,7 @@ function ProjectText({id, parentId, resume, setResume}){
 
     return(
         <div className="experience-text">
-            <textarea onChange={changeProjectTextHandler} name="text" placeholder="Description"></textarea>
+            <textarea className="experience-textarea" onChange={changeProjectTextHandler} value={description.text} name="text" placeholder="Description"></textarea>
             <button onClick={removeProjectTextHandler}>Delete</button>
         </div>
     )

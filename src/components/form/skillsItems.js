@@ -1,4 +1,4 @@
-function SkillsItems({ id, resume, setResume }) {
+function SkillsItems({ id, skill, resume, setResume }) {
     function changeSkillHandler(e){
         const { name, value} = e.target;
         setResume(prevState => {
@@ -21,7 +21,7 @@ function SkillsItems({ id, resume, setResume }) {
     }
     return (
         <>
-            <input onChange={changeSkillHandler} type="text" name="skill" placeholder="Add Skill"></input>
+            <input onChange={changeSkillHandler} value={skill.skill} type="text" name="skill" placeholder="Add Skill"></input>
             <button onClick={removeSkillHandler}>Delete</button>
         </>
     );

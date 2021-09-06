@@ -15,7 +15,7 @@ function Skills({ resume, setResume }) {
 
     const skillsItems = resume.skills.map((skill) => {
         return (
-            <SkillsItems key={skill.id} id={skill.id} resume={resume} setResume={setResume} />
+            <SkillsItems key={skill.id} id={skill.id} skill={skill} resume={resume} setResume={setResume} />
         )
     })
 

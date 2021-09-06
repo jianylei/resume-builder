@@ -11,7 +11,7 @@ function ExperienceItem({experience}){
                 <div style={{color:"rgb(83, 83, 83)"}}>{experience.start} - {experience.end}</div>
             </div>
             <div><i>{experience.position}</i></div>
-            <ul className="experience-text">{newList}</ul>
+            <ul className="preview-experience-text">{newList}</ul>
         </div>
     )
 }

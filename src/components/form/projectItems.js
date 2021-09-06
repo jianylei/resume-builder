@@ -1,7 +1,7 @@
 import uniqid from "uniqid";
 import ProjectText from "./projectItemsText";
 
-function ProjectItems({ id, resume, setResume }) {
+function ProjectItems({ id, project, resume, setResume }) {
     function changeProjectHandler(e) {
         const { name, value } = e.target;
         setResume(prevState => {
@@ -45,7 +45,7 @@ function ProjectItems({ id, resume, setResume }) {
             return (
                 projects.description.map(description => {
                     return (
-                        <ProjectText key={description.id} parentId={id} id={description.id} resume={resume} setResume={setResume} />
+                        <ProjectText key={description.id} parentId={id} id={description.id} description={description} resume={resume} setResume={setResume} />
                     )
                 })
             )
@@ -55,10 +55,10 @@ function ProjectItems({ id, resume, setResume }) {
 
     return (
         <>
-            <input onChange={changeProjectHandler} type="text" name="name" placeholder="Project Name"></input>
+            <input onChange={changeProjectHandler} value={project.name} type="text" name="name" placeholder="Project Name"></input>
             <div className="experience-text-container">
                 {projectsItemText}
-                <button style={{float: "right"}} onClick={addDescriptionHandler}>Add</button>
+                <button className="add-btn" onClick={addDescriptionHandler}>Add</button>
             </div>
 
             <button onClick={removeProjectHandler}>Delete</button>

@@ -1,8 +1,9 @@
-function ButtonBar({onClick}){
-    
+function ButtonBar({onPrint, onClear, onExample}){
     return(
         <div className="bar-container">
-            <button onClick={onClick}>Print</button>
+            <button onClick={onPrint}>Print</button>
+            <button onClick={onClear}>clear</button>
+            <button onClick={onExample}>example</button>
         </div>
     )
 }

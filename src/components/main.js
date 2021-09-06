@@ -24,14 +24,11 @@ function Main() {
 
     return (
         <>
-        <button onClick={clear}>clear</button>
-        <button onClick={setExample}>example</button>
+        <ButtonBar onPrint={handlePrint} onClear={clear} onExample={setExample} setResume={setResume}/>
         <div className="main-container">
             <Form resume={resume} setResume={setResume} />
             <Preview resume={resume} ref={componentRef}/>
         </div>
-        <ButtonBar onClick={handlePrint} setResume={setResume}/>
-        
         </>
     );
 }

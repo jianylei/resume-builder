@@ -7,7 +7,7 @@ function ProjectItem({project}){
     return(
         <div className="preview-projects">
                 <div style={{fontWeight: "bold"}}>{project.name}</div>
-            <ul className="experience-text">{newList}</ul>
+            <ul className="preview-experience-text">{newList}</ul>
         </div>
     )
 }

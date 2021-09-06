@@ -12,7 +12,7 @@ function SideBar({resume}){
     const skillItems = resume.skills.map((skill)=>{
         return(
             <div className="preview-skills-container">
-                <div style={{marginBottom:"5px"}}>{skill.skill}</div>
+                <div style={{marginBottom:"5px", color:"rgb(83, 83, 83)"}}>{skill.skill}</div>
             </div>
         )
     });

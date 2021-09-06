@@ -19,7 +19,7 @@ function Education({ resume, setResume }) {
 
     const educationItems = resume.education.map((education) => {
         return (
-            <EducationItems key={education.id} id={education.id} resume={resume} setResume={setResume} />
+            <EducationItems key={education.id} id={education.id} education={education} resume={resume} setResume={setResume} />
         )
     })
 

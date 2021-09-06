@@ -1,7 +1,7 @@
 import uniqid from "uniqid";
 import ExperienceText from "./experienceText";
 
-function ExperienceItems({ id, resume, setResume }) {
+function ExperienceItems({ id, experience, resume, setResume }) {
     function changeExperienceHandler(e) {
         const { name, value } = e.target;
         setResume(prevState => {
@@ -45,7 +45,7 @@ function ExperienceItems({ id, resume, setResume }) {
             return (
                 experience.description.map(description => {
                     return (
-                        <ExperienceText key={description.id} parentId={id} id={description.id} resume={resume} setResume={setResume} />
+                        <ExperienceText key={description.id} parentId={id} id={description.id} description={description} resume={resume} setResume={setResume} />
                     )
                 })
             )
@@ -55,14 +55,14 @@ function ExperienceItems({ id, resume, setResume }) {
 
     return (
         <>
-            <input onChange={changeExperienceHandler} type="text" name="company" placeholder="Company"></input>
-            <input onChange={changeExperienceHandler} type="text" name="position" placeholder="Position"></input>
-            <input onChange={changeExperienceHandler} type="text" name="city" placeholder="City"></input>
-            <input onChange={changeExperienceHandler} type="text" name="start" placeholder="Start Date"></input>
-            <input onChange={changeExperienceHandler} type="text" name="end" placeholder="End Date"></input>
+            <input onChange={changeExperienceHandler} value={experience.company} type="text" name="company" placeholder="Company"></input>
+            <input onChange={changeExperienceHandler} value={experience.position} type="text" name="position" placeholder="Position"></input>
+            <input onChange={changeExperienceHandler} value={experience.city} type="text" name="city" placeholder="City"></input>
+            <input onChange={changeExperienceHandler} value={experience.start} type="text" name="start" placeholder="Start Date"></input>
+            <input onChange={changeExperienceHandler} value={experience.end} type="text" name="end" placeholder="End Date"></input>
             <div className="experience-text-container">
                 {experienceItemText}
-                <button style={{float: "right"}} onClick={addDescriptionHandler}>Add</button>
+                <button className="add-btn" onClick={addDescriptionHandler}>Add</button>
             </div>
 
             <button onClick={removeExperienceHandler}>Delete</button>

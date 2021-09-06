@@ -1,4 +1,4 @@
-function ExperienceText({id, parentId, resume, setResume}){
+function ExperienceText({id, parentId, description, resume, setResume}){
     function changeExperienceTextHandler(e) {
         const { name, value } = e.target;
         setResume((prevState) => {
@@ -35,8 +35,8 @@ function ExperienceText({id, parentId, resume, setResume}){
 
     return(
         <div className="experience-text">
-            <textarea onChange={changeExperienceTextHandler} name="text" placeholder="Description"></textarea>
-            <button onClick={removeExperienceTextHandler}>Delete</button>
+            <textarea className="experience-textarea" value={description.text} onChange={changeExperienceTextHandler} name="text" placeholder="Description"></textarea>
+            <button className="description-delete-btn" onClick={removeExperienceTextHandler}>Delete</button>
         </div>
     )
 }
