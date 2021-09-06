@@ -46,8 +46,45 @@ const exampleResume = {
         },{
           id: uniqid(),
           text: "Administer the full lifecycle of software developement of 12 fake critikal projects of the company with 100% on-time delivery"
-      }]
-    }],
+      },{
+        id: uniqid(),
+        text: "Applied version control software (Git) to track, test, and update fake pre-existing source code"
+    }]
+    },{
+        id: uniqid(),
+        company: "Fake RBC",
+        position: "Web Developer CO-OP",
+        city: "Toronto",
+        start: "Jun 2018",
+        end: "Dec 2018",
+        description:[{
+          id: uniqid(),
+          text: "Did some fake work resulting in a 25% increase in user clicks and subsequently 33% in customer purchases"
+          },{
+            id: uniqid(),
+            text: "Administer the full lifecycle of software developement of 12 fake critikal projects of the company with 100% on-time delivery"
+        },{
+            id: uniqid(),
+            text: "Applied version control software (Git) to track, test, and update fake pre-existing source code"
+        }]
+      },,{
+        id: uniqid(),
+        company: "Fake Startup",
+        position: "Data Ananlyst CO-OP",
+        city: "Toronto",
+        start: "Jan 2018",
+        end: "Jun 2018",
+        description:[{
+          id: uniqid(),
+          text: "Did some fake work resulting in a 25% increase in user clicks and subsequently 33% in customer purchases"
+          },{
+            id: uniqid(),
+            text: "Administer the full lifecycle of software developement of 12 fake critikal projects of the company with 100% on-time delivery"
+        },{
+            id: uniqid(),
+            text: "Applied version control software (Git) to track, test, and update fake pre-existing source code"
+        }]
+      }],
     education:[{
       id: uniqid(),
       instituteName: "Fake Harvard",

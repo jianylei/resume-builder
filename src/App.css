@@ -86,7 +86,7 @@ input:focus, textarea:focus{
 .preview-header-container{
 }
 .preview-header-container >h1{
-  font-size: 40px;
+  font-size: 45px;
   margin-bottom: 5px;
 }
 .summary{
@@ -94,10 +94,10 @@ input:focus, textarea:focus{
   margin-bottom: 40px;
 }
 /* experience */
-.experience{
-  margin-bottom: 10px;
+.experience, .education{
+  margin-bottom: 5px;
 }
-.experience-flex{
+.experience-flex, .education-flex{
   display: flex;
   justify-content: space-between;
   margin-bottom: 3px;

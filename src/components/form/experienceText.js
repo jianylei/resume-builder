@@ -35,7 +35,7 @@ function ExperienceText({id, parentId, resume, setResume}){
 
     return(
         <div className="experience-text">
-            <textarea onChange={changeExperienceTextHandler} name="text"></textarea>
+            <textarea onChange={changeExperienceTextHandler} name="text" placeholder="Description"></textarea>
             <button onClick={removeExperienceTextHandler}>Delete</button>
         </div>
     )

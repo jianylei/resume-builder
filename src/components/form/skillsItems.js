@@ -21,7 +21,7 @@ function SkillsItems({ id, resume, setResume }) {
     }
     return (
         <>
-            <input onChange={changeSkillHandler} type="text" name="skill" placeholder="i.e python(django, flask)"></input>
+            <input onChange={changeSkillHandler} type="text" name="skill" placeholder="Add Skill"></input>
             <button onClick={removeSkillHandler}>Delete</button>
         </>
     );

@@ -62,7 +62,7 @@ function ExperienceItems({ id, resume, setResume }) {
             <input onChange={changeExperienceHandler} type="text" name="end" placeholder="End Date"></input>
             <div className="experience-text-container">
                 {experienceItemText}
-                <button onClick={addDescriptionHandler}>Add</button>
+                <button style={{float: "right"}} onClick={addDescriptionHandler}>Add</button>
             </div>
 
             <button onClick={removeExperienceHandler}>Delete</button>
