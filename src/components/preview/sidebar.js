@@ -3,7 +3,7 @@ import EducationItem from "./educationItems";
 function SideBar({resume}){
     const linkItems = resume.personalInfo.link.map((link)=>{
         return(
-            <div className="preview-link-container">
+            <div key={link.id} className="preview-link-container">
                 <div>{link.title}</div>
                 <div style={{color:"rgb(83, 83, 83)"}}>{link.url}</div>
             </div>
@@ -11,7 +11,7 @@ function SideBar({resume}){
     });
     const skillItems = resume.skills.map((skill)=>{
         return(
-            <div className="preview-skills-container">
+            <div key={skill.id} className="preview-skills-container">
                 <div style={{marginBottom:"5px", color:"rgb(83, 83, 83)"}}>{skill.skill}</div>
             </div>
         )

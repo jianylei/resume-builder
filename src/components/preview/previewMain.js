@@ -11,7 +11,7 @@ function PreviewMain({resume}){
 
     return(
         <div className="preview-content">
-            <div className="experience-container">
+            <div>
                 <legend>Experience</legend>
                 {experienceItems}
             </div>

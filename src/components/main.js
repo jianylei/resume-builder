@@ -8,7 +8,7 @@ import emptyResume from "./emptyResume"
 import exampleResume from "./exampleResume";
 
 function Main() {
-    const[resume, setResume] = useState(exampleResume)
+    const[resume, setResume] = useState(emptyResume)
 
     const componentRef = useRef()
     const handlePrint = useReactToPrint({ 

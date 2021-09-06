@@ -56,11 +56,10 @@ function ProjectItems({ id, project, resume, setResume }) {
     return (
         <>
             <input onChange={changeProjectHandler} value={project.name} type="text" name="name" placeholder="Project Name"></input>
-            <div className="experience-text-container">
+            <div>
                 {projectsItemText}
                 <button className="add-btn" onClick={addDescriptionHandler}>Add</button>
             </div>
-
             <button onClick={removeProjectHandler}>Delete</button>
         </>
     );
