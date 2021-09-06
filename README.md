@@ -34,4 +34,5 @@ ReactJS, HTML/CSS
 ## Future Implementations
 <ul>
   <li>Layout selection</li>  
+  <li>Mobile optimization</i>
 </ul>
