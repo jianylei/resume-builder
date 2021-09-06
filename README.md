@@ -37,4 +37,5 @@ ReactJS, HTML/CSS
 <ul>
   <li>Layout selection</li>  
   <li>Mobile optimization</i>
+  <li>Safari optimization</i>
 </ul>
