@@ -1,4 +1,5 @@
 import { Component } from "react";
+import PreviewHeader from "./header";
 
 class Preview extends Component{
     render(){
@@ -6,12 +7,10 @@ class Preview extends Component{
 
         return(
             <div className="preview-container">
-            {resume.personalInfo.firstName}
-            {resume.personalInfo.lastName}
-            {resume.personalInfo.title}
-            {resume.personalInfo.phone}
-            {resume.personalInfo.email}
-            {resume.personalInfo.summary}
+                <div className="content-container">
+                    <PreviewHeader resume={resume}/>
+                </div>
+                <div className="side-container"></div>
         </div>
         )
     }
