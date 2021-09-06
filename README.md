@@ -33,8 +33,5 @@ ReactJS, HTML/CSS
 
 ## Future Implementations
 <ul>
-  <li>Search function</li>  
-  <li>Library sorting and filtering</li> 
-  <li>Register and sign-in</li>
-  <li>Live database (PostgreSQL)</li>  
+  <li>Layout selection</li>  
 </ul>
