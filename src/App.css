@@ -1,8 +1,14 @@
 *, *::before, *::after {
+    font-family: "Helvetica", sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     word-wrap: break-word;
+}
+legend{
+  color: #3184cc;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
   /* Header */
@@ -29,7 +35,6 @@
     padding: 4rem 8rem;
     margin: 0 auto;
     margin-bottom: 4rem;
-    border: 2px solid red;
 }
 @media (max-width: 1600px) {
   .main-container{
@@ -73,46 +78,43 @@ input:focus, textarea:focus{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
 }
 .content-container{
-  border: 2px solid yellow;
-  padding: 3rem;
+  padding: 4rem;
 }
 .side-container{
-  padding: 3rem 0;
-  border: 2px solid red;
+  padding: 4rem 4rem 4rem 0;
 }
 .preview-header-container{
-  border: 2px solid coral;
 }
 .preview-header-container >h1{
   font-size: 40px;
   margin-bottom: 5px;
 }
 .summary{
-  padding: 50px 0 30px;
-}
-.preview-content{
-  border: 2px solid green;
+  margin-top: 10px;
+  margin-bottom: 40px;
 }
 /* experience */
 .experience{
-  border: 2px solid blue;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
+  margin-bottom: 10px;
 }
-.company-city{
-  grid-column: 2/-1;
+.experience-flex{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3px;
+}
+.experience-text{
+  padding: 10px;
+  margin-left: 20px;
+  color: rgb(83, 83, 83);
+}
+li{
+  margin-bottom: 5px;
 }
 /* side */
-.personal-info{
-  border: 2px solid red;
-}
+
 .side-container{
-  border: 2px solid blue;
   display: flex;
   flex-direction: column;
-}
-.preview-link-contaienr{
-  border: 2px solid blue;
 }
 
 /* Footer */

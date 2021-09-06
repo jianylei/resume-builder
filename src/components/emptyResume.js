@@ -23,7 +23,11 @@ const emptyResume = {
       position: "",
       city: "",
       start: "",
-      end: ""
+      end: "",
+      description:[{
+        id: uniqid(),
+        text: ""
+      }]
     }],
     education:[{
       id: uniqid(),

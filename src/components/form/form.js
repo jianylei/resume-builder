@@ -29,14 +29,14 @@ function Form({resume, setResume}) {
             <legend>Links</legend>
             <Link  resume={resume}  setResume={setResume}/>
 
-            <legend>Skills</legend>
-            <Skills  resume={resume}  setResume={setResume}/>
-
             <legend>Experience</legend>
             <Experience resume={resume}  setResume={setResume} />
 
             <legend>Education</legend>
             <Education resume={resume}  setResume={setResume} />
+
+            <legend>Skills</legend>
+            <Skills  resume={resume}  setResume={setResume}/>
         </div>
     );
 }

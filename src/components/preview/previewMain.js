@@ -11,8 +11,10 @@ function PreviewMain({resume}){
 
     return(
         <div className="preview-content">
-            <legend>Experience</legend>
+            <div className="experience-container">
+                <legend>Experience</legend>
                 {experienceItems}
+            </div>
 
             <legend>Education</legend>
                 {educationItems}

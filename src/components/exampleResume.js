@@ -6,7 +6,7 @@ const exampleResume = {
       title: "Web Developer",
       phone: "(123) 456-7890",
       email: "johndoe@mail.com",
-      summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin massa pretium sodales dignissim. Curabitur risus massa, commodo eget fringilla suscipit, congue dignissim sem. Phasellus vel libero maximus, porta ipsum at, aliquet lacus. Nulla odio libero, laoreet consectetur luctus vitae, posuere et urna. Donec ultricies erat mi. Morbi pellentesque nibh eleifend euismod sagittis. Duis ut urna sit amet ante vulputate elementum at eget justo. Morbi urna nulla, interdum non massa nec, ornare commodo nibh. Nam sed arcu iaculis, efficitur nisi at, consectetur nibh. Sed a nulla ex. Maecenas egestas elementum turpis eget lobortis. Etiam velit turpis, pellentesque ut lacinia a, rhoncus vel ante. Nunc consequat turpis vitae varius dapibus. Sed laoreet felis libero, ac sollicitudin orci faucibus nec. Phasellus imperdiet lacus ipsum, consectetur sodales odio interdum vitae.",
+      summary: "Dedicated web developer with five years of experience in database administration and website design. Strong creative and analytical skills. Team player with an eye for detail. MySQL, Python and Ruby on Rails.",
       link:[{
         id: uniqid(),
         title: "Github",
@@ -39,7 +39,14 @@ const exampleResume = {
       position: "Junior Web Developer",
       city: "Toronto",
       start: "Jan 2019",
-      end: "Dec 2021"
+      end: "Dec 2021",
+      description:[{
+        id: uniqid(),
+        text: "Did some fake work resulting in a 25% increase in user clicks and subsequently 33% in customer purchases"
+        },{
+          id: uniqid(),
+          text: "Administer the full lifecycle of software developement of 12 fake critikal projects of the company with 100% on-time delivery"
+      }]
     }],
     education:[{
       id: uniqid(),

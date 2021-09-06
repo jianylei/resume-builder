@@ -12,7 +12,11 @@ function Experience({ resume, setResume }) {
                 position: "",
                 city: "",
                 start: "",
-                end: ""
+                end: "",
+                description:[{
+                    id: uniqid(),
+                    text: ""
+                }]
             }]
         }))
     }
