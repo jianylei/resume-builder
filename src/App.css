@@ -74,19 +74,45 @@ input:focus, textarea:focus{
 }
 .content-container{
   border: 2px solid yellow;
-  padding: 2rem;
+  padding: 3rem;
 }
 .side-container{
-  padding: 2rem;
+  padding: 3rem 0;
   border: 2px solid red;
 }
 .preview-header-container{
   border: 2px solid coral;
-  padding: 1rem 2rem;
 }
 .preview-header-container >h1{
   font-size: 40px;
   margin-bottom: 5px;
+}
+.summary{
+  padding: 50px 0 30px;
+}
+.preview-content{
+  border: 2px solid green;
+}
+/* experience */
+.experience{
+  border: 2px solid blue;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.company-city{
+  grid-column: 2/-1;
+}
+/* side */
+.personal-info{
+  border: 2px solid red;
+}
+.side-container{
+  border: 2px solid blue;
+  display: flex;
+  flex-direction: column;
+}
+.preview-link-contaienr{
+  border: 2px solid blue;
 }
 
 /* Footer */

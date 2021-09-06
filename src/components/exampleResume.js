@@ -45,7 +45,7 @@ const exampleResume = {
       id: uniqid(),
       instituteName: "Fake Harvard",
       city: "Cambridge",
-      degree: "B.S",
+      degree: "B.S.",
       subject: "Computer Science",
       start: "Sep 2014",
       end: "Jun 2018"
