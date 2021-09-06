@@ -102,7 +102,7 @@ input:focus, textarea:focus{
 .experience-text{
   display: flex;
   gap: 15px;
-  padding: 0 20px 15px;
+  margin-bottom: 15px;
   margin-left: auto;
   color: rgb(83, 83, 83);
 }
@@ -115,7 +115,6 @@ input:focus, textarea:focus{
 }
 .add-btn{
   float: right;
-  margin-right: 20px;
 }
 .link-item-container{
   display: grid;
